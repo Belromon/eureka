@@ -4,9 +4,10 @@ server:
 eureka:
     instance:
         hostname: localhost
+        status-page-url-path: /swagger-ui.html#/
     client:
         registerWithEureka: false
         fetchRegistry: false
         serviceUrl:
-            defaultZone: http://${eureka.instance.hostname}:${server.port}/swagger-ui.html#/
+            defaultZone: http://${eureka.instance.hostname}:${server.port}
 
